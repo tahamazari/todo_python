@@ -1,6 +1,6 @@
 from functions import *
 
-tasks_dict = {}
+list = []
 
 def main():
     while True:
@@ -14,18 +14,18 @@ def main():
         action = int(input())
 
         if(action == 1):
-            list_tasks(tasks_dict)
+            list_tasks(list)
 
         elif(action == 2):
-            add_task(tasks_dict)
+            add_task(list)
 
         elif(action == 3):
-            update_task(tasks_dict)
+            update_task(list)
 
         elif(action == 4):
-            delete_task(tasks_dict)
+            delete_task(list)
 
-        elif(action != 1 | 2 | 3 | 4):
+        else:
             exit()
 
 
